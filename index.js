@@ -41,7 +41,13 @@ app.on('ready', () => {
             x: conf.left,
             y: conf.top
         });
-      })    
+
+        winArr[i].webContents.on('did-finish-load', function() {
+            winArr[i].webContents.insertCSS('* { overflow: hidden !important;}')
+       });
+    })   
+      
+      
 })
 
 function loadNext() {
