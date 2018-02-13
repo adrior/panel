@@ -37,6 +37,7 @@ app.on('ready', () => {
             width: conf.width,
             enableLargerThanScreen: false,
             height: conf.height,
+            frame: false,
             x: conf.left,
             y: conf.top
         });
