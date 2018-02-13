@@ -44,11 +44,11 @@ app.on('ready', () => {
             thickFrame: false
         });
 
-        if (winConf[i].width < 1024) {
-            winArr[i].webContents.on('did-finish-load', function() {
-                winArr[i].webContents.insertCSS('* { overflow: hidden !important;}')
-           });           
-        }
+        // if (winConf[i].width < 1024) {
+        //     winArr[i].webContents.on('did-finish-load', function() {
+        //         winArr[i].webContents.insertCSS('* { overflow: hidden !important;}')
+        //    });           
+        // }
 
     })   
       
